@@ -96,7 +96,7 @@ function showCurrentWeather(response) {
 
 //function for updating forecast section **function incomplete**
 function showForecast(response) {
-  console.log(response.data);
+  //console.log(response.data);
 }
 
 //fetching weather of lat long location
@@ -134,7 +134,8 @@ function updateLocation(event) {
     //fetching weather(to then get lat lon) from inputted location
     let apiEndpointCurrent = "https://api.openweathermap.org/data/2.5/weather?";
     let apiKey = "a825d12564855984e0e5673562cb2c52";
-    let apiUrlCurrent = `${apiEndpointCurrent}appid=${apiKey}&q=${location}`;
+    let apiUrlCurrent = `${apiEndpointCurrent}appid=${apiKey}&q=${newLocation}`;
+
     axios.get(apiUrlCurrent).then(getLatLonOfInput);
   }
 }
