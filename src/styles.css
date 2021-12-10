@@ -1,0 +1,99 @@
+/* card setup on page */
+.card {
+  margin: 20px auto;
+  max-width: 1000px;
+}
+
+/* font assignment for numbers */
+.temp,
+.current-temp {
+  font-family: "DM Sans", sans-serif;
+}
+
+/* font assignment for text */
+.location,
+.weekday,
+.current-date,
+.time,
+.weather-type,
+.humidity,
+.wind,
+.weekday-short,
+.date {
+  font-family: "DM Sans", sans-serif;
+}
+
+/* CSS for current weather information section */
+.current-info {
+  text-align: left;
+  padding: 0 0 0 50px;
+}
+.location {
+  font-weight: bold;
+  font-size: larger;
+}
+/* classes with no CSS (yet)
+.weekday-long {}
+.current-date {}
+.time {}
+.weather-type {}
+.humidity {}
+.wind {}
+*/
+.current-emoji {
+  font-size: 100px;
+  text-align: center;
+}
+.current-temp {
+  font-size: 100px;
+  font-weight: 700;
+  text-align: center;
+}
+.temp-unit {
+  text-align: right;
+  padding: 0 15px 0 0;
+}
+
+/* CSS for week-long forecast section */
+.weekday-short,
+.date,
+.emoji,
+.temp {
+  display: block;
+  text-align: center;
+}
+.weekday-short {
+  font-weight: bold;
+}
+/* .date {} */
+.emoji {
+  font-size: 75px;
+}
+.temp {
+  font-size: 40px;
+}
+
+/* CSS for footer section */
+footer {
+  text-align: center;
+  font-size: 15px;
+  color: rgb(152, 152, 152);
+  display: block;
+  margin: 10 auto;
+}
+
+/* hover state properties for all sections */
+.daily-temp,
+.current-info,
+.current-emoji,
+.current-temp {
+  border-radius: 10px;
+  transition: 120ms ease-in-out;
+}
+.daily-temp:hover,
+.current-info:hover,
+.current-emoji:hover,
+.current-temp:hover {
+  background: rgb(239, 247, 252);
+  cursor: default;
+}
